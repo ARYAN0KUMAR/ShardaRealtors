@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+html{
+    font-size: 62.5%;
+}
+.logo{
+    height: 10rem;
+}
+#header{
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.0rem 0;
+    background: black;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.7rem;
+}
+#navbar li{
+    font-weight: bold;
+    list-style: none;
+    padding: 0 2.5rem;
+    position: relative;
+
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
+}
+a{
+    color: gray;
+}
+a:link{
+    color: gray;
+    text-decoration: none;
+}
+a:hover, a.active{
+    color: whitesmoke;
+
+}
+#navbar li a.active::after,
+a:hover::after{
+    content: "";
+    width: 30%;
+    height: 0.2rem;
+    background: whitesmoke;
+    position: absolute;
+    bottom: -0.4rem;
+    left: 2.6rem;
+}
+#home{
+    background-image: url(img/home4.jpg);
+    background-size: cover;
+    /* filter: blur(0.2rem); */
+    height: 70rem;
+    /* margin-top: 10rem; */
+    
+}
+.home1{
+    text-align: center;
+}
+.home1 h1{
+    padding-top: 5rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2rem;
+}
+.home1 h3{
+    color: whitesmoke;
+}
+.home1 h2{
+    padding-top: 10rem;
+    color: whitesmoke;
+    font-size: 4.5rem;
+
+}
+.home2{
+    text-align: center;
+}
+.home2 button{
+    text-align: center;
+    margin: 13rem 4rem 0 4rem;
+    padding: 0.5rem 2.5rem;
+    
+}
+.home2 button:hover{
+    background: -webkit-linear-gradient(#eee, #333);
+    transition: 0.3s;
+}
+.sellform{
+    z-index: 5;
+    display: none;
+}
+.location{
+    margin-top: 6rem;
+    text-align: center;
+}
+.location p{
+    color: white;
+    font-size: 2rem;
+
+}
+.location p i{
+    font-size: 4rem;
+}
+#content{
+    height: 95rem;
+}
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 95rem;
+  }
+  
+  .demo-bg {
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 95rem;
+  }
+  
+  .demo-content {
+    position: relative;
+  }
+ .demo-content h1{
+    padding-top: 4.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ hr{
+    display: flex;
+    background-color: none;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: black;
+    border-width: 0.7rem;
+    height: 0;
+    width: 25rem;
+    margin: 0 auto;
+    
+  }
+  .card{
+    width: 28.1rem;
+    height: 36rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+}
+  .card-img-top{
+    width: 28rem;
+    height: 18rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  .card{
+    margin-left: auto;
+    margin-right: auto;
+}
+.cards{
+    margin-top: 5rem;
+}
+.card h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card-text {
+    font-size: 1.5rem;
+}
+#About{
+    /* position: relative; */
+    background-image: url(img/nature.jpg);
+    background-size: cover;
+    height: 100%;
+}
+.about1{
+    position: relative;
+}
+.billboard{
+    position: absolute;
+    /* margin-top: 0; */
+    height: 55rem;
+}
+.photo{
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    top: 5rem;
+    left: 1.8rem;
+    /* right: 55rem;
+    bottom: 11rem; */
+}
+.name{
+    position: absolute;
+    width: 21rem;
+    top: 12.7rem;
+    left: 2.1rem;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+.comp{
+    position: absolute;
+    width: 6rem;
+    top: 27.7rem;
+    left: 8.1rem;
+}
+.profile{
+    position: absolute;
+    top: 7.5rem;
+    left: 12rem;
+}
+.profile h1{
+    background: -webkit-linear-gradient(grey, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.profile1{
+    position: absolute;
+    top: 14rem;
+    left: 19rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-weight: 600 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+.images{
+    position: relative;
+    left: 55rem;
+    height: 60rem;
+    width: 60rem;
+}
+.img0{
+    position: absolute;
+    display: none;
+    height: 15rem;
+    width: 15rem;
+
+}
+.img1{
+    position: absolute;
+    top:0rem;
+    left:0rem;
+}
+.img2{
+    position: absolute;
+    top:5rem;
+    left:16rem;
+}
+.img3{
+    position: absolute;
+    top:10rem;
+    left:32rem;
+}
+.img4{
+    position: absolute;
+    top:15rem;
+    left:48rem;
+}
+.img5{
+    position: absolute;
+    top:20rem;
+    left:64rem;
+}
+.img6{
+    position: absolute;
+    top:25rem;
+    left:48rem;
+}
+.img7{
+    position: absolute;
+    top:30rem;
+    left:32rem;
+}
+.img8{
+    position: absolute;
+    top:35rem;
+    left:16rem;
+}.img9{
+    position: absolute;
+    top:40rem;
+    left:0;
+}
+#enquire{
+    background-image: url(img/deal.jpg);
+    background-size: cover; 
+    height: 100%;   
+}
+.check{
+    text-align: center;
+    height: 5rem;
+    background: -webkit-linear-gradient(white, #333);
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+}
+.check h1{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.check1{
+    text-align: center;
+    height: 5rem;
+    background: -webkit-linear-gradient(white,rgb(112, 178, 214) );
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+}
+.check1 h1{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+.container {
+	width: 38rem;
+	margin:7% auto;
+	border-radius: 2.5rem;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 1.7rem #333;
+}
+
+.header {
+	text-align: center;
+	padding-top: 5rem;
+}
+
+.header h1 {
+	color: #333;
+	font-size: 4.5rem;
+	margin-bottom: 5rem;
+}
+
+.main {
+	text-align: center;
+}
+.main input, .ebutton {
+	width: 30rem;
+	height: 4rem;
+	border:none;
+	outline: none;
+	padding-left: 4rem;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+	color: #333;
+	margin-bottom: 2rem;
+}
+
+.main .ebutton {
+	padding-left: 0;
+	background-color: #83acf1;
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 10rem;
+    border-radius: 5%;
+}
+
+.main .ebutton:hover {
+	box-shadow: 0.2rem 0.2rem 0.5rem #555;
+	background-color: #7799d4;
+}
+.main input:hover {
+	box-shadow: 0.2rem 0.2rem 0.5rem #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+.main i {
+	position: absolute;
+	left: 1.5rem;
+	color: #333;
+	font-size: 1.6rem;
+	bottom: 0rem;
+}
+.main .done{
+    padding-bottom: 4rem;
+    font-weight: bold;
+    display: none;
+}
+#contact{
+    background: -webkit-linear-gradient(rgb(112, 178, 214),black);
+    height: 60rem;
+
+}
+.details{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 10rem;
+ 
+}
+.number{
+    height: 25rem;
+    width: 30rem;
+    background: white;
+    text-align: center;
+
+}
+.number h2{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.number h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.number i{
+    font-size: 4rem;
+    margin-top: 0.5rem;
+}
+.phone{
+    background: gray;
+    height: 5rem;
+}
+#footer{
+    background:black ;
+    height: 12rem;
+}
+.antsweb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aw{
+    width: auto;
+    height: auto;
+}
+.aw h2 ,.aw h3{
+    padding-top: 4rem;
+}
+.ants{
+    height: 8rem;
+    width: 10rem;
+}
+@media(max-width:998px) {
+    html{
+        font-size: 52%;
+    }
+    #content{
+        height: 140rem;
+      }
+      .demo-wrap{
+          height: 140rem;
+      }
+      .demo-bg{
+          height: 140rem;
+      }
+}
+@media(max-width:768px) {
+    html{
+        font-size: 45%;
+    }
+    #navbar li{
+        padding: 0 1rem;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(0.8rem) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-0.8rem) rotate(-45deg);
+    }
+    #navbar{
+        position: fixed;
+        left: -100%;
+        top: 10rem;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    #navbar li{
+        margin: 1.6rem 0;
+    }
+    #navbar.active{
+        left: 0;
+    }
+    #home{
+        background-image: url(img/home3.jpg);
+        height: 90rem;
+    }
+    .home1 h1{
+        font-size: 4rem;
+    }
+    .home2 button{
+        margin-top:20rem;
+        margin-left: 2rem;
+    }
+    .location{
+        margin-top: 10rem;
+    }
+    #content{
+      height: 130rem;
+    }
+    hr{
+        margin-bottom: 3rem;
+    }
+    .demo-wrap{
+        height: 130rem;
+    }
+    .demo-bg{
+        height: 130rem;
+    }
+    .cards{
+        margin:1rem 0 0 1rem;
+        width: 48%;
+        height: 34rem;
+    }
+    .card{
+        width: 22rem;
+        height: 34rem;
+    }
+    .card-img-top{
+        width: 21.9rem;
+        height: 16rem;
+    }
+    #About{
+        height: 115rem;
+    }
+    .images{
+        top: 30rem;
+        left: 2rem;
+    }
+    .billboard{
+        height: 54rem;
+    }
+    .img1{
+        position: absolute;
+        top:0rem;
+        left:0rem;
+    }
+    .img2{
+        position: absolute;
+        top:5rem;
+        left:16rem;
+    }
+    .img3{
+        position: absolute;
+        top:10rem;
+        left:32rem;
+    }
+    .img4{
+        position: absolute;
+        top:15rem;
+        left:16rem;
+    }
+    .img5{
+        position: absolute;
+        top:20rem;
+        left:0rem;
+    }
+    .img6{
+        position: absolute;
+        top:25rem;
+        left:16rem;
+    }
+    .img7{
+        position: absolute;
+        top:30rem;
+        left:32rem;
+    }
+    .img8{
+        position: absolute;
+        top:35rem;
+        left:16rem;
+    }.img9{
+        position: absolute;
+        top:40rem;
+        left:0;
+    }
+    .check h1{
+        font-size: 2rem;
+    }
+    #enquire{
+        background-image: url(img/deal2.jpg);
+        height: 70rem;
+    }
+    .header{
+        margin-top: 9rem;
+    }
+    
+}
